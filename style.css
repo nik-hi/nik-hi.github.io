@@ -1,0 +1,14 @@
+html {
+
+    background-color: white;
+    color: black;
+
+}
+button {
+
+    background-color: transparent;
+    color: black;
+    border-radius: 200px;
+
+}
+body {font-family: 'Piedra', cursive;}

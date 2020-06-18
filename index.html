@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>RUAG nik-hi</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport
+    content=" width=device-width, inital- scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h2> Workshop A</h2>
+	<img src="/img/Ping1.png" alt="Hobby" height="300" width="300" /><img src="/img/Pc.png" alt="Hobby" height="300" width="500" />
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/_WH6cbwZ5m8" frameborder="0"
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<table>
+		<thead>
+			<tr>
+				<th>Steckbrief</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Wohnort</td>
+				<td><i>Interlaken Ost</i></td>
+			</tr>
+			<tr>
+				<td>Alter</td>
+				<td><i>14</i></td>
+			</tr>
+			<tr>
+				<td>Hobbys</td>
+				<td><i>Tischtennis und Gamen</i></td>
+			</tr>
+			<tr>
+				<td>Traumberuf</td>
+				<td><i>Keinen genau, richtung Informatik</i></td>
+			</tr>
+		</tbody>
+	</table>
+	<b>Warum Informatik</b>
+	<p>Ich interessiere mich für Informatik da ich algemein gerne "Programiere" und mit Electronik arbeite.</p>
+	<b>Was ich kannte</b>
+	<p>Ich kannte etwa was in einem Pc ist zum beispiel Prozessor, Hauptplatine u.s.w.</p>
+	<b>Was Ich neues kenne</b>
+	<p>Jetzt kenne ich viel mehr was Programieren auf Linux angeht, ich weis wie eine eigene Webseite machen kann u.s.w.
+	</p>
+    <button onclick="wobinich()">Drück' mich!</button>
+    <script>
+
+    function wobinich() {
+        if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(zeigePosition);
+        }
+    }
+
+    function zeigePosition(position) {
+        alert("Aha! Da bist du also: " + position.coords.latitude + ", " 
+        + position.coords.longitude + ". Ich habe gemeint, du wartest auch mich!");
+    }
+	</script>
+</body>
+</html>
